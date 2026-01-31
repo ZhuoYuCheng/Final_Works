@@ -1,0 +1,11 @@
+digraph G {
+  rankdir=LR;
+  0 [label="0"];
+  3 [label="3"];
+  4 [label="4"];
+  5 [label="5"];
+  7 [label="7 (failure)"];
+  5 -> 7 [label="0.000", color=gray];
+  4 -> 7 [label="0.000", color=gray];
+  3 -> 7 [label="0.000", color=gray];
+}

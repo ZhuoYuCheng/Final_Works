@@ -1,0 +1,42 @@
+adapter:
+  name: who_when
+  base_mode: auto
+context_policy: tail
+slm:
+  model_name: /root/autodl-tmp/GraphTracer_Reproduce/model/Qwen3-8B
+  dtype: float16
+  max_length: 512
+  last_n_layers: 2
+  head_agg: mean
+detector:
+  anomaly_mode: proto
+  anomaly_weight: 0.1
+  anomaly_norm: zscore
+  proto_mode: global
+  proto_bank_size: 4
+graph:
+  top_k: 5
+  threshold: null
+  renorm: true
+  renorm_mode: l1
+  min_edge_weight: null
+  keep_ratio: null
+  prune_mode: fixed
+  zscore_k: 1.0
+  edge_temperature: 1.0
+  head_agg: mean
+  head_select: all
+  head_top_k: 8
+  layer_weighting: uniform
+  overlap_weight: 0.0
+  depth: 6
+  min_in_edges: 1
+tracer:
+  score_mix: 0.0
+  early_bias_weight: 0.0
+  early_bias_power: 1.0
+train:
+  model_type: mlp
+  train_epochs: 10
+  train_lr: 5e-4
+  split_ratio: 0.5

@@ -1,0 +1,137 @@
+{
+  "failure_idx": 7,
+  "failure_strategy": "final",
+  "pred_when": 3,
+  "pred_who": "computer_terminal",
+  "sinks": [
+    7,
+    0,
+    6,
+    5
+  ],
+  "sink_weights": [
+    1.0,
+    0.5,
+    0.3333333333333333,
+    0.3333333333333333
+  ],
+  "cf_details": [
+    {
+      "idx": 3,
+      "delta": 0.3084904650847117,
+      "per_sink": [
+        {
+          "sink": 7,
+          "weight": 1.0,
+          "before": 1.0,
+          "after": 1.0
+        },
+        {
+          "sink": 0,
+          "weight": 0.5,
+          "before": 0.031777024269104004,
+          "after": 0.039462268352508545
+        },
+        {
+          "sink": 6,
+          "weight": 0.3333333333333333,
+          "before": 1.0,
+          "after": 1.0
+        },
+        {
+          "sink": 5,
+          "weight": 0.3333333333333333,
+          "before": 1.0,
+          "after": 0.06300073862075806
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "delta": 0.2509458462397257,
+      "per_sink": [
+        {
+          "sink": 7,
+          "weight": 1.0,
+          "before": 1.0,
+          "after": 1.0
+        },
+        {
+          "sink": 0,
+          "weight": 0.5,
+          "before": 0.031777024269104004,
+          "after": 0.063895583152771
+        },
+        {
+          "sink": 6,
+          "weight": 0.3333333333333333,
+          "before": 1.0,
+          "after": 1.0
+        },
+        {
+          "sink": 5,
+          "weight": 0.3333333333333333,
+          "before": 1.0,
+          "after": 0.19898462295532227
+        }
+      ]
+    },
+    {
+      "idx": 0,
+      "delta": 0.26135538021723426,
+      "per_sink": [
+        {
+          "sink": 7,
+          "weight": 1.0,
+          "before": 1.0,
+          "after": 1.0
+        },
+        {
+          "sink": 0,
+          "weight": 0.5,
+          "before": 0.031777024269104004,
+          "after": 0.08870172500610352
+        },
+        {
+          "sink": 6,
+          "weight": 0.3333333333333333,
+          "before": 1.0,
+          "after": 1.0
+        },
+        {
+          "sink": 5,
+          "weight": 0.3333333333333333,
+          "before": 1.0,
+          "after": 0.13054680824279785
+        }
+      ]
+    }
+  ],
+  "paths": [],
+  "agent_scores": {},
+  "delta_aligned": {
+    "top_steps": [
+      {
+        "idx": 3,
+        "agent": "computer_terminal",
+        "delta": 0.30849045515060425
+      },
+      {
+        "idx": 0,
+        "agent": "pythondebugging_expert",
+        "delta": 0.26135537028312683
+      },
+      {
+        "idx": 2,
+        "agent": "environment_expert",
+        "delta": 0.2509458363056183
+      }
+    ],
+    "agent_scores": {
+      "computer_terminal": 0.30849045515060425,
+      "pythondebugging_expert": 0.26135537028312683,
+      "environment_expert": 0.2509458363056183
+    }
+  },
+  "subgraph": {}
+}
